@@ -32,8 +32,3 @@ RegisterCommand('togglepresence', function()
 	end	
 end)
 
-
-
-RegisterCommand('togglepresence', function()
-		
-end)
