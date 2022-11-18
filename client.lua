@@ -14,11 +14,11 @@ Citizen.CreateThread(function()
         end)
        
 	if cfg.Link1Toggle == true then
-		SetDiscordRichPresenceAction(0, cfg.button1)
+		SetDiscordRichPresenceAction(0, cfg.Link1Button, cfg.Link1)
 	end
 
 	if cfg.Link2Toggle == true then
-		SetDiscordRichPresenceAction(1, cfg.button2)
+		SetDiscordRichPresenceAction(1, cfg.Link2Button, cfg.Link2)
 	end
 
 	Citizen.Wait(60000)
