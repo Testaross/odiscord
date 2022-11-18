@@ -26,11 +26,21 @@ Citizen.CreateThread(function()
 end)
 if cfg.toggle == true then
 	RegisterCommand(cfg.togglecommand, function()
-		if enabled == true then
-			enabled = false
-		else
-			enabled = true
-		end	
-	end)
+	if enabled == true then
+		lib.notify({
+		    title = cfg.NotificationTitle,
+		    description = cfg.NotificationError,
+		    type = 'error'
+		})
+		enabled = false
+	else
+		lib.notify({
+		    title = cfg.NotificationTitle,
+		    description = cfg.NotificationSuccess ,
+		    type = 'success'
+		})
+		enabled = true
+	end		
+    end)
 end
 
