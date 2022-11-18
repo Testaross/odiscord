@@ -1,7 +1,7 @@
 Citizen.CreateThread(function()
 	while true do
         -- This is the Application ID (Replace this with you own)
-		SetDiscordAppId(1011488536807092274)
+		SetDiscordAppId(cfg.DiscordAppID)
 
         -- Here you swill have to put the image name for the "large" icon.
 		SetDiscordRichPresenceAsset('logo')
@@ -17,7 +17,7 @@ Citizen.CreateThread(function()
         -- Here you can add hover text for the "small" icon.
         SetDiscordRichPresenceAssetSmallText('small_logo')
 
-        SetRichPresence('Listening to Paramore on Elgin Blvd') 
+        SetRichPresence(cfg.richPresenceText) 
         -- (26-02-2021) New Native:
 
         --[[ 
@@ -25,8 +25,8 @@ Citizen.CreateThread(function()
             First paramater is the button index (0 or 1), second is the title and 
             last is the url (this has to start with "fivem://connect/" or "https://") 
         ]]--
-        SetDiscordRichPresenceAction(0, "Join our Discord!", "https://discord.gg/9YJyAZfGBX")
-        -- SetDiscordRichPresenceAction(1, "Visit Our Website", "None")
+        SetDiscordRichPresenceAction(0, cfg.button1)
+        SetDiscordRichPresenceAction(1, cfg.button2)
 
         -- It updates every minute just in case.
 		Citizen.Wait(60000)
