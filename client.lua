@@ -5,22 +5,23 @@ Citizen.CreateThread(function()
 	SetDiscordAppId(cfg.DiscordAppID)
 	SetDiscordRichPresenceAsset(cfg.discordImageName)
         SetDiscordRichPresenceAssetText(cfg.hoverText)
-        SetDiscordRichPresenceAssetSmall(cfg.smallDiscordImageName)
-        SetDiscordRichPresenceAssetSmallText(cfg.smallHoverText)
-        SetRichPresence(cfg.richPresenceText) 
+	if cfg.smallassetenable == true then
+		SetDiscordRichPresenceAssetSmall(cfg.smallDiscordImageName)
+		SetDiscordRichPresenceAssetSmallText(cfg.smallHoverText)
+	end
         lib.callback('GetCurrentPlayers', false, function(players)
             SetRichPresence('Players: '..result..''..cfg.MaxPlayers)
         end)
-        
-		if cfg.Link1Toggle == true then
-        	SetDiscordRichPresenceAction(0, cfg.button1)
-		end
-        
-		if cfg.Link2Toggle == true then
-			SetDiscordRichPresenceAction(1, cfg.button2)
-		end
        
-		Citizen.Wait(60000)
+	if cfg.Link1Toggle == true then
+		SetDiscordRichPresenceAction(0, cfg.button1)
+	end
+
+	if cfg.Link2Toggle == true then
+		SetDiscordRichPresenceAction(1, cfg.button2)
+	end
+
+	Citizen.Wait(60000)
 	end
 end)
 
