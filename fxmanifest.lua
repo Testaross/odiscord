@@ -3,6 +3,6 @@ game 'gta5'
 
 
 client_scripts {
-    'clside.lua',
+    'client.lua',
     'cfg.lua'
 }
