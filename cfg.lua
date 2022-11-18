@@ -1,5 +1,5 @@
 cfg = {}
-cfg.DiscordAppID = 653188008882864148 
+cfg.DiscordAppID = 
 
 cfg.discordImageName = 'test'
 cfg.hoverText = 'Testing'
