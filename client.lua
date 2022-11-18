@@ -10,7 +10,7 @@ Citizen.CreateThread(function()
 		SetDiscordRichPresenceAssetSmallText(cfg.smallHoverText)
 	end
         lib.callback('GetCurrentPlayers', false, function(players)
-            SetRichPresence('Players: '..result..''..cfg.MaxPlayers)
+            SetRichPresence('Players: '..players..''..cfg.MaxPlayers)
         end)
        
 	if cfg.Link1Toggle == true then
