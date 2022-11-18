@@ -2,7 +2,6 @@ enabled = true
 
 Citizen.CreateThread(function()
 	while enabled do
-
 	SetDiscordAppId(cfg.DiscordAppID)
 	SetDiscordRichPresenceAsset(cfg.discordImageName)
         SetDiscordRichPresenceAssetText(cfg.hoverText)
@@ -16,6 +15,7 @@ Citizen.CreateThread(function()
 		if cfg.Link1Toggle == true then
         	SetDiscordRichPresenceAction(0, cfg.button1)
 		end
+        
 		if cfg.Link2Toggle == true then
 			SetDiscordRichPresenceAction(1, cfg.button2)
 		end
