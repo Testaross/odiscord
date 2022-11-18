@@ -24,12 +24,13 @@ Citizen.CreateThread(function()
 	Citizen.Wait(60000)
 	end
 end)
-
-RegisterCommand('togglepresence', function()
-	if enabled == true then
-		enabled = false
-	else
-		enabled = true
-	end	
-end)
+if cfg.toggle == true then
+	RegisterCommand(cfg.togglecommand, function()
+		if enabled == true then
+			enabled = false
+		else
+			enabled = true
+		end	
+	end)
+end
 
