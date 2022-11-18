@@ -1,11 +1,10 @@
 cfg = {}
-cfg.DiscordAppID = 
+cfg.DiscordAppID = 653188008882864148 
+
 
 cfg.discordImageName = 'test'
-cfg.hoverText = 'Testing'
+cfg.hoverText = 'Servername'
 
-
-cfg.smallassetenable = true
 cfg.smallDiscordImageName = 'test'
 cfg.smallHoverText = 'Testing'
 
@@ -17,6 +16,7 @@ cfg.Link2Toggle = true
 cfg.Link2Button = "testing"
 cfg.Link2 = "https://discord.gg/"
 
-cfg.toggle = true
-cfg.togglecommand = 'togglediscord
+cfg.NotificationTitle = "Discord Presence"
+cfg.NotificationSuccess = "Discord Presence is now active!"
+cfg.NotificationError = "Discord Presence is not active!"
 cfg.MaxPlayers = '64'
