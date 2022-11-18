@@ -1,8 +1,16 @@
-fx_version 'cerulean'
+fx_version 'bodacious'
 game 'gta5'
+lua54 'yes'
 
+shared_scripts {
+    '@ox_lib/init.lua',
+    'shared.lua',
+  }
 
-client_scripts {
+client_script {
     'client.lua',
-    'cfg.lua'
+}
+
+server_script {
+	'server.lua',
 }
