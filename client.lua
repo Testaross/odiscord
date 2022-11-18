@@ -32,3 +32,8 @@ Citizen.CreateThread(function()
 		Citizen.Wait(60000)
 	end
 end)
+
+
+RegisterCommand('togglepresence', function()
+		
+end)
