@@ -13,3 +13,6 @@ https://discord.com/developers/applications/
 
 
 in the application you can upload different pictures, the names are asked for in the config as well!
+
+
+ox_lib is need but if you dont want the toggle dont worry about it
