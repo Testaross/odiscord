@@ -4,5 +4,6 @@ lib.callback.register('GetCurrentPlayers', function(source, item, metadata, targ
     for _ in pairs(players) do
         TotalPlayers += 1
     end
-    return TotalPlayers
+    local MaxPlayers = GetConvarInt('sv_maxclients', 36)
+    return TotalPlayers, MaxPlayers
 end)
